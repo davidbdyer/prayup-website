@@ -1,0 +1,55 @@
+#header_home {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.container {
+	color: #d82529;
+	text-align: center;
+	margin-top: 3.5em;
+	font-size: 2vw;
+}
+
+.container h1 {
+	font-size: 150%;
+	font-weight: normal;
+	letter-spacing: .125rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container li {
+	display: inline-block;
+	font-size: 4vw;
+	list-style-type: none;
+	padding: 2.3vw;
+	text-transform: uppercase;
+}
+
+.container li span {
+	display: block;
+	font-size: 2em;
+	padding-bottom: 1vh;
+
+}
+
+.emoji {
+	display: none;
+	padding: 1rem;
+}
+
+.emoji span {
+	font-size: 4rem;
+	padding: 0 .5rem;
+}
+
+@media only screen and (min-width: 1025px) {
+	#header_home {
+		margin-top: 8vh;
+	}
+	.container {
+		transform: scale(.5);
+		margin-top: -5%;
+	}
+}

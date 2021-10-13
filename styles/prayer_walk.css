@@ -1,0 +1,65 @@
+#prayerwalk {
+	padding: 3vh;
+}
+
+#prayerwalk div {
+	margin: 1em 0;
+
+}
+
+#prayerwalkTextInput input {
+	width: 100%;
+	display: block;
+	margin: 0 0 1em 0;
+}
+
+input[type=radio] {
+	  float: left;
+	  display: block;
+	}
+
+label {
+	  margin-left: 30px;
+	  display: block;
+	}
+
+h3 {
+	font-family: "gothambold", "sans-serif";
+}
+
+#details h3 {
+	margin: 1em 0 .5em 0;
+}
+
+#details p {
+	margin-left: .5em;
+}
+
+#details h2 a {
+	font-family: gothambook, sans-serif;
+	font-size: .5em;
+	vertical-align: middle;
+	text-decoration: underline;
+}
+
+ul {
+	display: inline;
+}
+
+li {
+  text-align: left;
+
+  margin: .5em
+}
+
+.special {
+	font-size: .8em;
+}
+
+.hiddenLabel{
+	display: none;
+}
+
+.section_border{
+	margin-top: 3vh;
+}
