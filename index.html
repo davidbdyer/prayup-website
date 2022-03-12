@@ -24,7 +24,7 @@
   <!-- css -->
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-  <!-- <link rel="stylesheet" href="styles/countdown.css"> -->
+  <link rel="stylesheet" href="styles/countdown.css">
 
 </head>
 
@@ -32,7 +32,8 @@
   <header id="header_home">
     <img src="images/prayup_logo.svg" alt="pray up logo">
 
-    <!-- <div class="container">
+<!-- Prayer Walk Counter -->
+    <div class="container">
       <div id="countdown">
         <ul>
           <li><span id="days"></span>days</li>
@@ -45,7 +46,7 @@
         <span>🚶🏻‍♀️</span>
         <span>🚶🏿‍♂️</span>
         <span>🚶</span>
-      </div>
+<!--       </div>
       <h1 id="headline"><a id="prayer-walk-parking" href="prayer-walk-details.html">Countdown to Marion Prayer Walk</a></h1>
     </div> -->
 
@@ -140,7 +141,7 @@
         hour = minute * 60,
         day = hour * 24;
 
-      let prayerWalk = "Aug 22, 2021 16:00:00",
+      let prayerWalk = "April 22, 2022 16:00:00",
         countDown = new Date(prayerWalk).getTime(),
         x = setInterval(function() {
 
