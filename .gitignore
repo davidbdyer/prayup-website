@@ -1,6 +1,10 @@
-
-/.nova/
-/.DS_Store
-.DS_Store
-/images/.DS_Store
-/node_modules
+node_modules/
+public/
+.nova/
+.vscode/
+*.DS_Store
+*.xd
+*.sketch
+*.fig
+prepros.config
+package-lock.json
