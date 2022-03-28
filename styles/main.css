@@ -151,10 +151,12 @@ nav ul li a {
   margin-inline: 3vh;
   margin-bottom: 3vh;
   text-align: center;
+  
 }
 
 #us img {
-  max-width: 200px;
+  /* max-width: 200px; */
+  width: min(200px, 25vw);
   border: 1px solid var(--prayup-red);
   border-radius: .5rem;
 }
@@ -170,12 +172,19 @@ nav ul li a {
   font-size: .9em;
 }
 
-@media screen and (max-width: 1351px) {
+@media (min-width:1201) and (max-width: 1351px) {
    #us ul {
      max-width: 70%;
      margin-inline: auto;
+     display: flex;
+     flex-wrap: wrap;
    }
+}
 
+@media screen and (max-width: 1200px) {
+  #us img {
+    width: 200px;
+   }
 }
 
 /* ----------------- Events Page Specific ----------------- */
