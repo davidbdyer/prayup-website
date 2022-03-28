@@ -5,3 +5,4 @@
 /images/.DS_Store
 config.codekit3
 *.afphoto
+node_modules/

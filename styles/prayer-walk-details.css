@@ -1,0 +1,64 @@
+h1 {
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    padding-block: 1em;
+    color: var(--prayup-red);
+    /* font-size: clamp(.5em, .5em + 1vw, 7em ) */
+}
+
+section {
+    padding: 3vh;
+    border: 1px solid var(--prayup-red);
+    border-radius: 6pt;
+}
+
+.church-list > ul {
+    display: flex;
+    justify-content: flex-start;
+	gap: 1em;
+}
+
+.church-list > ul > li {
+    padding: 1em;
+    border: 1px solid var(--prayup-red);
+    border-radius: 0.5rem;
+}
+
+footer {
+    margin-top: 3vh;
+}
+
+#parking-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#parking-list-p {
+    max-width: 100%;
+    margin-inline: 1vw;
+    margin-block: 3vh;
+}
+
+.parking {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20vw;
+    width: 100%;
+    margin-inline: 1vw;
+}
+
+.parking-image,
+.worship-info-map {
+    max-width: 100%;
+    border-radius: 6pt;
+}
+
+@media screen and (min-width: 800px) {
+    #parking-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
