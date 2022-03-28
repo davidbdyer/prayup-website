@@ -155,8 +155,8 @@ nav ul li a {
 }
 
 #us img {
-  /* max-width: 200px; */
-  width: min(200px, 25vw);
+  /* width: min(200px, 25vw); */
+  width: 15vw;
   border: 1px solid var(--prayup-red);
   border-radius: .5rem;
 }
@@ -181,7 +181,7 @@ nav ul li a {
    }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 950px) {
   #us img {
     width: 200px;
    }
