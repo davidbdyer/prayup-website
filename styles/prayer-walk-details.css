@@ -20,7 +20,8 @@ section {
 	gap: 1em;
 }
 
-.church-list > ul > li {
+.church-list > ul > li > a {
+    display: block;
     padding: 1em;
     border: 1px solid var(--prayup-red);
     border-radius: 0.5rem;
