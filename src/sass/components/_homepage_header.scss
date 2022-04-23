@@ -1,6 +1,13 @@
 .header-home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-rows: min-content;
+	align-items: start;
+	justify-items: center;
 }

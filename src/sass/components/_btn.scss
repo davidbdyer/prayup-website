@@ -1,0 +1,12 @@
+.btn {
+	padding: 0.5em;
+	border: 1px solid var(--prayup-red);
+	border-radius: 0.5rem;
+	color: var(--prayup-red);
+	font-family: gothambold;
+
+	& > a {
+		color: inherit;
+		text-decoration: none;
+	}
+}

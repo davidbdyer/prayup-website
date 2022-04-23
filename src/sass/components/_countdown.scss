@@ -1,0 +1,46 @@
+.countdown_container {
+	color: #d82529;
+	// font-size: 2rem;
+	font-size: clamp(0.8rem, 3vw, 3rem);
+	text-align: center;
+}
+
+.countdown_container h1 {
+	font-size: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.countdown_container li {
+	display: inline-block;
+	padding: 2.3vw;
+	// font-size: clamp(1rem, 2vw, 4rem);
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.countdown_container li span {
+	display: block;
+	padding-bottom: 1vh;
+	font-size: 2rem;
+}
+
+.emoji {
+	display: none;
+	padding: 1rem;
+}
+
+.emoji span {
+	padding: 0 0.5rem;
+	font-size: 4rem;
+}
+
+@media only screen and (min-width: 1025px) {
+	.header_home {
+		margin-top: 8vh;
+	}
+	.countdown_container {
+		margin-top: -5%;
+		transform: scale(0.5);
+	}
+}
