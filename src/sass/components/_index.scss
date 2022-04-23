@@ -1,4 +1,5 @@
-@use 'homepage_header';
-@use 'section';
-@use 'logos';
-@use 'event_section';
+@forward 'homepage_header';
+@forward 'sections';
+@forward 'logos';
+@forward 'lists';
+@forward 'images';
