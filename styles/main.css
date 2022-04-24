@@ -37,6 +37,7 @@ body {
 	background: var(--background-color);
 	color: var(--prayup-red);
 	transition: all 250ms ease-in-out;
+	font-family: 'gothambold'
 }
 
 .btn > a {
@@ -58,6 +59,7 @@ body {
 	background: var(--background-color);
 	color: var(--prayup-red);
 	transition: all 250ms ease-in-out;
+	font-family: 'gothambold'
 }
 
 .btn-sm > a {
