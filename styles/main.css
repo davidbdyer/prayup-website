@@ -30,7 +30,6 @@ body {
 }
 
 .btn {
-	padding: 0.5rem 0.25rem;
 	border-width: 1pt;
 	border-style: solid;
 	border-radius: 0.5em;
@@ -59,6 +58,12 @@ body {
 	background: var(--background-color);
 	color: var(--prayup-red);
 	transition: all 250ms ease-in-out;
+}
+
+.btn-sm > a {
+	display: block;
+	padding: 1em 0;
+	/* color: var(--prayup-red); */
 }
 
 .btn-sm:hover {
@@ -321,7 +326,7 @@ nav ul li a {
 	flex-shrink: 1;
 	flex-basis: 2vw;
 	margin: 0 1vw 0 1vw;
-	padding: 1em;
+	/* padding: 1em; */
 	border: 1px solid var(--prayup-red);
 	border-radius: 0.5rem;
 	text-align: center;
