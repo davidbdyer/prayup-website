@@ -1,9 +1,9 @@
 {
-	"prettier.useTabs": true,
-	"prettier.proseWrap": "preserve",
-	"prettier.jsxBracketSameLine": true,
-	"prettier.singleQuote": true,
-	"prettier.printWidth": 120,
-	"order": "smacss",
-	"tabWidth": 4
+	"proseWrap": "preserve",
+	"jsxBracketSameLine": true,
+	"singleQuote": true,
+	"printWidth": 200,
+	"tabWidth": 4,
+	"useTabs": true,
+	"order": "smacss"
 }

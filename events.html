@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Events</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Events</title>
+		<!-- facebook -->
+		<meta property="og:image" content="images/prayup_site_thumbnail.jpg" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://prayuplife.com/" />
+		<meta property="og:title" content="Pray Up - Events Page" />
+		<meta property="og:description" content="Pray Up - Bringing people together thru the power of prayer." />
 
-	<!-- facebook -->
-	<meta property="og:image" content="images/prayup_site_thumbnail.jpg">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://prayuplife.com/">
-	<meta property="og:title" content="Pray Up - Events Page">
-	<meta property="og:description" content="Pray Up - Bringing people together thru the power of prayer.">
+		<!-- css -->
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
 
-	<!-- css -->
-	<link rel="stylesheet" href="styles/reset.css">
-	<link rel="stylesheet" href="styles/main.css">
+	<body>
+		<header class="header_subpage">
+			<img src="images/horizontal_logo.svg" alt="prayup logo" />
+		</header>
 
-</head>
+		<nav>
+			<ul>
+				<li class="btn"><a href="index.html">Home</a></li>
+				<li class="btn"><a href="partner.html">Partner</a></li>
+				<li class="btn"><a href="https://prayuplife.com/store" target="_blank" rel="noopener noreferrer">Store</a></li>
+			</ul>
+		</nav>
 
-<body>
-	<header class="header_subpage">
-		<img src="images/horizontal_logo.svg" alt="prayup logo">
-	</header>
-
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="partner.html">Partner</a></li>
-			<li>
-				<a href="https://prayuplife.com/store" target="_blank" rel="noopener noreferrer">Store</a>
-			</li>
-		</ul>
-	</nav>
-
-	<div id="event_special" class="section_border">
-		<img src="images/prayer_walk_worship.svg" alt="prayer walking worship">
-		<div>
-			<h3>Marion Prayer Walk</h3>
-			<div class="event_time">Sunday: 5:30p, April 24nd</div>
-			<p>Worship downtown @ 6:30p</p>
-			<a id="prayer-walk-parking" href="prayer-walk-details.html">Event Details</a>
+		<div id="event_special" class="section_border">
+			<img src="images/prayer_walk_worship.svg" alt="prayer walking worship" />
+			<div>
+				<h3>Marion Prayer Walk</h3>
+				<div class="event_time">Sunday: 5:30p, April 24nd</div>
+				<p>Worship downtown @ 6:30p</p>
+				<a id="prayer-walk-parking" href="prayer-walk-details.html">Event Details</a>
+			</div>
 		</div>
-	</div>
 
-	<h2 id="event-weekly">Weekly</h2>
+		<h2 id="event-weekly">Weekly</h2>
 
-	<ul id="events">
-		<li class="section_border">
-			<a href="https://theriver.cc" target="_blank" rel="noopener noreferrer"><img src="images/theriver.png" alt="the river"></a>
-			<div class="event_time">Sunday: 7:30a-8:45a</div>
-		</li>
-		<!-- <li class="section_border">
+		<ul id="events">
+			<li class="section_border">
+				<a href="https://theriver.cc" target="_blank" rel="noopener noreferrer"><img src="images/theriver.png" alt="the river" /></a>
+				<div class="event_time">Sunday: 7:30a-8:45a</div>
+			</li>
+			<!-- <li class="section_border">
 			<a href="https://newlifemarion.com" target="_blank" rel="noopener noreferrer"><img src="images/new_life_church.png" alt="new life church"></a>
 			<div class="event_time">Sunday: 9a-10a</div>
 		</li> -->
-		<li class="section_border">
-			<a href="http://bwcministries.com" target="_blank" rel="noopener noreferrer"><img src="images/bethel_marion_in.png" alt="bethel worship center"></a>
-			<div class="event_time">Sunday: 10a-11a</div>
-		</li>
-		<li class="section_border">
-			<a href="https://www.hopehousemarion.org" target="_blank" rel="noopener noreferrer"><img src="images/hope_house.png" alt="hope house"></a>
-			<div class="event_time">Friday: 5:30p-6:30p @ <a href="http://visitgodshouse.com" target="_blank" rel="noopener noreferrer">God's House</a></div>
-		</li>
-	</ul>
+			<li class="section_border">
+				<a href="http://bwcministries.com" target="_blank" rel="noopener noreferrer"><img src="images/bethel_marion_in.png" alt="bethel worship center" /></a>
+				<div class="event_time">Sunday: 10a-11a</div>
+			</li>
+			<li class="section_border">
+				<a href="https://www.hopehousemarion.org" target="_blank" rel="noopener noreferrer"><img src="images/hope_house.png" alt="hope house" /></a>
+				<div class="event_time">Friday: 5:30p-6:30p @ <a href="http://visitgodshouse.com" target="_blank" rel="noopener noreferrer">God's House</a></div>
+			</li>
+		</ul>
 
-	<footer>
+		<footer>
+			<!-- Contact Form Section -->
 
-		<!-- Contact Form Section -->
+			<section class="section_border" id="start_team">
+				<h2>Start a <span class="pray_up_name_emphasis">Pray Up</span> Team At Your Church</h2>
+				<form class="contact_form" id="mailinglist" action="mail.php" method="POST">
+					<label for="name">name</label>
+					<input type="text" id="name" name="name" minlength="2" maxlength="20" placeholder="name" required />
+					<label for="email">email</label>
+					<input type="email" id="email" name="email" minlength="2" maxlength="50" placeholder="email" required />
+					<label for="mobile">mobile</label>
+					<input type="tel" id="mobile" name="mobile" minlength="10" maxlength="14" placeholder="mobile" required />
+					<button class="btn-sm" type="submit">Submit</button>
+				</form>
+			</section>
 
-		<section class="section_border" id="start_team">
-			<h2>
-				Start a <span class="pray_up_name_emphasis">Pray Up</span> Team At Your
-				Church
-			</h2>
-			<form class="contact_form" id="mailinglist" action="mail.php" method="POST">
-				<label for="name">name</label>
-				<input type="text" id="name" name="name" minlength="2" maxlength="20" placeholder="name" required>
-				<label for="email">email</label>
-				<input type="email" id="email" name="email" minlength="2" maxlength="50" placeholder="email" required>
-				<label for="mobile">mobile</label>
-				<input type="tel" id="mobile" name="mobile" minlength="10" maxlength="14" placeholder="mobile" required>
-				<input type="submit">
-			</form>
-		</section>
-
-		<p>Contact Us: info@prayuplife.com</p>
-		Creaidiv &copy; <script>
-			document.write(new Date().getFullYear());
-		</script>
-	</footer>
-</body>
-
+			<p>Contact Us: info@prayuplife.com</p>
+			Creaidiv &copy;
+			<script>
+				document.write(new Date().getFullYear());
+			</script>
+		</footer>
+	</body>
 </html>

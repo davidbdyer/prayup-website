@@ -14,6 +14,10 @@ section {
     border-radius: 6pt;
 }
 
+footer {
+    margin-top: 3vh;
+}
+
 .church-list > ul {
     display: flex;
     justify-content: flex-start;
@@ -25,10 +29,6 @@ section {
     padding: 1em;
     border: 1px solid var(--prayup-red);
     border-radius: 0.5rem;
-}
-
-footer {
-    margin-top: 3vh;
 }
 
 #parking-list {
