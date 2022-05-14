@@ -37,7 +37,7 @@ body {
 	background: var(--background-color);
 	color: var(--prayup-red);
 	transition: all 250ms ease-in-out;
-	font-family: 'gothambold'
+	font-family: 'gothambold';
 }
 
 .btn > a {
@@ -59,7 +59,7 @@ body {
 	background: var(--background-color);
 	color: var(--prayup-red);
 	transition: all 250ms ease-in-out;
-	font-family: 'gothambold'
+	font-family: 'gothambold';
 }
 
 .btn-sm > a {
@@ -167,7 +167,7 @@ nav ul li a {
 .contact_form input {
 	height: 3em;
 	margin-bottom: 1rem;
-	margin-right: .5rem;
+	margin-right: 0.5rem;
 	padding-left: 0.5em;
 	border: none;
 	border: 0.5px solid darkgray;
@@ -226,7 +226,7 @@ nav ul li a {
 	}
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
 	#us img {
 		width: 200px;
 	}
