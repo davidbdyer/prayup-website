@@ -20,37 +20,65 @@
 		<meta property="og:url" content="https://prayuplife.com/" />
 		<meta property="og:title" content="Pray Up" />
 		<meta property="og:description" content="Pray Up - Bringing people together thru the power of prayer." />
-		<meta property="og:image" content="images/prayup_site_thumbnail.jpg" />
+		<meta property="og:image" content="https://prayuplife.com/images/prayup_site_thumbnail.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="627" />
 
 		<link rel="stylesheet" href="css/style.css" />
 
-		<script src="assets/scripts/counter.js" defer></script>
+		<script src="assets/scripts/donate.js" defer></script>
 	</head>
 
 	<body>
-		<header class="header-home">
+		<header class="hero-home">
 			<div class="grid-container">
 				<img class="big-logo" src="assets/images/pu-header-logo-vert.svg" alt="pray up vertical logo" />
 			</div>
 		</header>
-		<nav>
-			<ul>
-				<li><a href="events.html">Events</a></li>
-				<li><a href="partner.html">Partner</a></li>
+
+		<!-- partner with us -->
+		<nav class="border-top donate" id="donate">
+			<a tabindex="0" class="btn"href="https://prayuplife.com/store">Store</a>
+			<a tabindex="0" class="btn"href="partner.html">Donate</a>
+		</nav>
+
+		<!-- events -->
+		<section class="border mb-2">
+			<h2>Events</h2>
+			<h3 class="after-hr">Weekly</h3>
+			<ul class="img-grid ul_event_img">
 				<li>
-					<a href="https://prayuplife.com/store" target="_blank" rel="noopener noreferrer">Store</a>
+					<img src="assets/images/logo-bwc.png" alt="bethal worship center marion IN" />
+					<p>Sun: 10a - 11a</p>
+				</li>
+				<li>
+					<img src="assets/images/logo-bwc.png" alt="bethal worship center marion IN" />
+					<p>Sun: 10a - 11a</p>
+				</li>
+				<li>
+					<img src="assets/images/logo-bwc.png" alt="bethal worship center marion IN" />
+					<p>Sun: 10a - 11a</p>
+				</li>
+				<li>
+					<img src="assets/images/logo-bwc.png" alt="bethal worship center marion IN" />
+					<p>Sun: 10a - 11a</p>
 				</li>
 			</ul>
-		</nav>
+		</section>
+
 		<!-- What is Pray Up Section -->
 		<section class="border mb-2">
 			<h2>What is Pray Up?</h2>
 			<p>
-				Pray Up is a prayer movement about increasing our prayer life and witnessing the power prayer has to change a personal situation, a mental setting, or a physical environment. The
-				campaign starts in cities, then moves to states, and will be available as an online platform to make a global impact. If you see the
-				<span class="pray_up_name_emphasis">Pray Up logo</span>, take it as a reminder; more than ever, we live in a time that prayer is needed. Local churches in Marion, Indiana, are coming
-				together in <span class="pray_up_name_emphasis">“Pray Up Teams”</span> because they see the effects of Pray Up’s vision and still believe in the power of prayer. Pray Up is currently
-				enrolled in Elevate Ventures to raise capital for the development of the fully functional app.
+				Pray Up is a prayer movement about increasing our prayer life and witnessing the power prayer has to
+				change a personal situation, a mental setting, or a physical environment. The campaign starts in cities,
+				then moves to states, and will be available as an online platform to make a global impact. If you see
+				the
+				<span class="pray_up_name_emphasis">Pray Up logo</span>, take it as a reminder; more than ever, we live
+				in a time that prayer is needed. Local churches in Marion, Indiana, are coming together in
+				<span class="pray_up_name_emphasis">“Pray Up Teams”</span> because they see the effects of Pray Up’s
+				vision and still believe in the power of prayer. Pray Up is currently enrolled in Elevate Ventures to
+				raise capital for the development of the fully functional app.
 			</p>
 		</section>
 
@@ -80,25 +108,55 @@
 				</li>
 			</ul>
 		</section>
-		<footer>
-			<!-- Contact Form Section -->
-			<section class="border mb-2">
-				<h3>Start a <span class="pray_up_name_emphasis">Pray Up</span> Team At Your Church</h3>
-				<form class="contact_form" id="mailinglist" action="mail.php" method="POST">
-					<label for="name">name</label>
-					<input type="text" id="name" name="name" minlength="2" maxlength="20" placeholder="name" required />
-					<label for="email">email</label>
-					<input type="email" id="email" name="email" minlength="2" maxlength="50" placeholder="email" required />
-					<label for="mobile">mobile</label>
-					<input type="tel" id="mobile" name="mobile" minlength="10" maxlength="14" placeholder="mobile" required />
-					<input type="submit" />
-				</form>
-			</section>
+
+		<!-- contact form -->
+		<section class="border mb-2">
+			<h2>Start a <span class="pray_up_name_emphasis">Pray Up</span> Team At Your Church</h2>
+
+			<form class="contact_form" id="mailinglist" action="mail.php" method="POST">
+				<label class="sr-only" for="name">name</label>
+				<input
+					class="border mb-1"
+					type="text"
+					id="name"
+					name="name"
+					minlength="2"
+					maxlength="20"
+					placeholder="name"
+					required
+				/>
+
+				<label class="sr-only" for="email">email</label>
+				<input
+					class="border mb-1"
+					type="email"
+					id="email"
+					name="email"
+					minlength="2"
+					maxlength="50"
+					placeholder="email"
+					required
+				/>
+
+				<label class="sr-only" for="mobile">mobile</label>
+				<input
+					class="border mb-1"
+					type="tel"
+					id="mobile"
+					name="mobile"
+					minlength="10"
+					maxlength="14"
+					placeholder="mobile"
+					required
+				/>
+
+				<button class="btn">Submit</button>
+			</form>
+		</section>
+
+		<footer class="mb-2">
 			<p>Contact Us: info@prayuplife.com</p>
-			<small>David Dyer &copy;</small>
-			<script>
-				document.write(new Date().getFullYear());
-			</script>
+			<small>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.daviddyer.me"  target="_blank" rel="noopener noreferrer">David Dyer</a> All Rights Reserved.</small>
 		</footer>
 	</body>
 </html>

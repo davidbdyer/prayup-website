@@ -1,13 +1,13 @@
 .btn {
-	padding: 0.5em;
+	display: block;
+	min-width: calc(6ch + 0.5em);
+	padding-inline: 0.5em;
+	padding-block: 0.25em;
 	border: 1px solid var(--prayup-red);
 	border-radius: var(--border-radius);
+	background-color: inherit;
 	color: var(--prayup-red);
 	font-family: gothambold;
-	background-color: transparent;
-
-	& > a {
-		color: inherit;
-		text-decoration: none;
-	}
+	text-align: center;
+	text-decoration: none;
 }
