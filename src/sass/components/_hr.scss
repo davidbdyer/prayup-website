@@ -1,0 +1,10 @@
+.header-hr::after {
+	display: block;
+	position: absolute;
+	top: 60%;
+	right: 0;
+	width: 79%;
+	height: 1px;
+	background-color: var(--prayup-red);
+	content: " ";
+}

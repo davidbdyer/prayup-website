@@ -2,7 +2,7 @@
 	"proseWrap": "preserve",
 	"jsxBracketSameLine": true,
 	"singleQuote": true,
-	"printWidth": 200,
+	"printWidth": 120,
 	"tabWidth": 4,
 	"useTabs": true,
 	"order": "smacss"

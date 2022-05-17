@@ -1,9 +1,10 @@
 .btn {
 	padding: 0.5em;
 	border: 1px solid var(--prayup-red);
-	border-radius: 0.5rem;
+	border-radius: var(--border-radius);
 	color: var(--prayup-red);
 	font-family: gothambold;
+	background-color: transparent;
 
 	& > a {
 		color: inherit;

@@ -8,4 +8,4 @@ public/
 *.fig
 prepros.config
 package-lock.json
-/.prettierrc
+.prettierrc
