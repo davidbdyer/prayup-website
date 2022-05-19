@@ -9,11 +9,12 @@
 	</head>
 
 	<body>
-		<header class="mb-2">
+		<header class="mb-2 p-1">
 			<img src="assets/images/pu-header-logo-horiz.svg" alt="prayup logo" />
 		</header>
-<a class="btn"href="index.html">Home</a>
-		<section class="section_border">
+
+<!-- thank you -->
+		<section class="border mb-2 p-1">
 			<h2>Thank You</h2>
 			<p>
 				Thank you for your interest in supporting <span class="pray_up_name_emphasis">Pray Up</span>. Joseph,
@@ -39,7 +40,8 @@
 			</p>
 		</section>
 
-		<section class="section_border">
+		<!-- how this works -->
+		<section class="border mb-2 p-1">
 			<h2>How this works</h2>
 			<p>
 				Click one of the icons below to commit to a gift for travel, or app development. If you would like to do
@@ -67,8 +69,8 @@
 			</ul>
 		</section>
 
-		<div class="dual_section_wrapper">
-			<section class="section_border" id="travel">
+		<div>
+			<section class="border mb-2 p-1" id="travel">
 				<h2>Travel</h2>
 				<img src="images/travel.svg" alt="Travel Support" />
 				<ul>
@@ -87,7 +89,7 @@
 				</ul>
 			</section>
 
-			<section class="section_border" id="app_development">
+			<section class="border mb-2 p-1" id="app_development">
 				<h2>App Development</h2>
 				<img src="images/app_dev.svg" alt="App Development" />
 				<ul>
@@ -106,43 +108,55 @@
 				</ul>
 			</section>
 		</div>
-		<footer>
-			<!-- Contact Form Section -->
 
-			<section class="section_border" id="start_team">
-				<h2>Start a <span class="pray_up_name_emphasis">Pray Up</span> Team At Your Church</h2>
-				<form class="contact_form" id="mailinglist" action="mail.php" method="POST">
-					<label for="name">name</label>
-					<input type="text" id="name" name="name" minlength="2" maxlength="20" placeholder="name" required />
-					<label for="email">email</label>
-					<input
-						type="email"
-						id="email"
-						name="email"
-						minlength="2"
-						maxlength="50"
-						placeholder="email"
-						required
-					/>
-					<label for="mobile">mobile</label>
-					<input
-						type="tel"
-						id="mobile"
-						name="mobile"
-						minlength="10"
-						maxlength="14"
-						placeholder="mobile"
-						required
-					/>
-					<input type="submit" />
-				</form>
-			</section>
+		<!-- contact form -->
+		<section class="border mb-2 p-1">
+			<h2>Start a <span class="pray_up_name_emphasis">Pray Up</span> Team At Your Church</h2>
 
+			<form class="contact_form" id="mailinglist" action="mail.php" method="POST">
+				<label class="sr-only" for="name">name</label>
+				<input
+					class="border mb-1"
+					type="text"
+					id="name"
+					name="name"
+					minlength="2"
+					maxlength="20"
+					placeholder="name"
+					required
+				/>
+
+				<label class="sr-only" for="email">email</label>
+				<input
+					class="border mb-1"
+					type="email"
+					id="email"
+					name="email"
+					minlength="2"
+					maxlength="50"
+					placeholder="email"
+					required
+				/>
+
+				<label class="sr-only" for="mobile">mobile</label>
+				<input
+					class="border mb-1"
+					type="tel"
+					id="mobile"
+					name="mobile"
+					minlength="10"
+					maxlength="14"
+					placeholder="mobile"
+					required
+				/>
+
+				<button class="btn">Submit</button>
+			</form>
+		</section>
+
+		<footer class="mb-2">
 			<p>Contact Us: info@prayuplife.com</p>
-			<small>David Dyer &copy;</small>
-			<script>
-				document.write(new Date().getFullYear());
-			</script>
+			<small>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.daviddyer.me"  target="_blank" rel="noopener noreferrer">David Dyer</a> All Rights Reserved.</small>
 		</footer>
 	</body>
 </html>
