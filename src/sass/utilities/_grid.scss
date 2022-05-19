@@ -1,6 +1,16 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	justify-items: center;
+	// justify-items: center;
+	place-items: center;
 	gap: 2rem;
+}
+
+.grid-md {
+	@media (min-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: stretch;
+		gap: 2rem;
+	}
 }

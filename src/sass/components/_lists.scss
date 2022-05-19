@@ -1,5 +1,24 @@
+@use '../utilities/breakpoint' as *;
+@use './btn' as *;
+
 ul {
-  padding: unset;
-  list-style: none;
-  text-align: left;
+	padding: unset;
+	list-style: none;
+	text-align: left;
+}
+
+.list-btn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 1rem;
+	font-size: 0.75rem;
+
+	& > li > a {
+		@extend .btn;
+	}
+
+	@media (min-width: $lg) {
+		font-size: 1rem;
+	}
 }

@@ -6,6 +6,7 @@
 		<meta property="og:image" content="images/site_thumbnail.jpg" />
 		<title>Pray Up Partners</title>
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="assets/scripts/nav.js" defer></script>
 	</head>
 
 	<body>
@@ -13,7 +14,13 @@
 			<img src="assets/images/pu-header-logo-horiz.svg" alt="prayup logo" />
 		</header>
 
-<!-- thank you -->
+		<!-- bottom popup nav -->
+		<nav class="border-top nav" id="nav">
+			<a tabindex="0" class="btn" href="https://prayuplife.com/store">Store</a>
+			<a tabindex="0" class="btn" href="index.html">Back</a>
+		</nav>
+
+		<!-- thank you -->
 		<section class="border mb-2 p-1">
 			<h2>Thank You</h2>
 			<p>
@@ -56,24 +63,21 @@
 				<span class="pray_up_name_emphasis">Pray Up</span> Hat, a
 				<span class="pray_up_name_emphasis">Pray Up</span> Magnet.
 			</p>
-			<ul id="you_get">
+			<ul class="grid">
 				<li>
-					<img src="images/magnet.png" alt="pray up magnet" />
+					<img src="assets/images/magnet.png" alt="pray up magnet" />
 				</li>
 				<li>
-					<img src="images/prayup_hat.png" alt="pray up hat" />
-				</li>
-				<li>
-					<img src="images/shirt.PNG" alt="pray up shirt" />
+					<img src="assets/images/shirt.png" alt="pray up shirt" />
 				</li>
 			</ul>
 		</section>
 
-		<div>
-			<section class="border mb-2 p-1" id="travel">
+		<div class="grid-md">
+			<section class="border donate mb-2 p-1">
 				<h2>Travel</h2>
-				<img src="images/travel.svg" alt="Travel Support" />
-				<ul>
+				<img src="assets/images/icon-travel.svg" alt=" Travel Support" />
+				<ul class="list-btn">
 					<li>
 						<a href="https://py.pl/1rPJq4">$5</a>
 					</li>
@@ -89,10 +93,10 @@
 				</ul>
 			</section>
 
-			<section class="border mb-2 p-1" id="app_development">
+			<section class="border donate mb-2 p-1" id="app_development">
 				<h2>App Development</h2>
-				<img src="images/app_dev.svg" alt="App Development" />
-				<ul>
+				<img src="assets/images/icon-dev.svg" alt="App Development" />
+				<ul class="list-btn">
 					<li>
 						<a href="https://py.pl/OOhDi">$5</a>
 					</li>
@@ -156,7 +160,14 @@
 
 		<footer class="mb-2">
 			<p>Contact Us: info@prayuplife.com</p>
-			<small>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.daviddyer.me"  target="_blank" rel="noopener noreferrer">David Dyer</a> All Rights Reserved.</small>
+			<small
+				>&copy;
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				<a href="https://www.daviddyer.me" target="_blank" rel="noopener noreferrer">David Dyer</a> All Rights
+				Reserved.</small
+			>
 		</footer>
 	</body>
 </html>
