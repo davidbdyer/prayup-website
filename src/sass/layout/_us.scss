@@ -1,0 +1,15 @@
+@use '../utilities/borders' as *;
+
+.title > li > h4 {
+	max-width: 100%;
+}
+
+.title > li > p {
+	max-width: 8rem;
+	font-size: 0.7rem;
+}
+
+.ul_us_img > li > img {
+	@extend .border;
+	width: 8rem;
+}
