@@ -6,6 +6,10 @@
 	gap: 2rem;
 }
 
+.grid-b {
+	place-items: end;
+}
+
 .grid-md {
 	@media (min-width: 768px) {
 		display: grid;
