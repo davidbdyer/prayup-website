@@ -1,9 +1,10 @@
+@use './breakpoint' as *;
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	// justify-items: center;
-	place-items: center;
-	gap: 2rem;
+	// place-items: center;
+	gap: var(--gap);
 }
 
 .grid-b {
@@ -11,10 +12,27 @@
 }
 
 .grid-md {
-	@media (min-width: 768px) {
+	@media (min-width: $md) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		justify-items: stretch;
-		gap: 2rem;
+		gap: var(--gap);
+	}
+}
+
+.grid-lg-list {
+	@media (min-width: $lg) {
+		--gap: 2rem;
+		li {
+			--gap: 1.5rem;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			gap: var(--gap);
+
+			& > * {
+				flex: none;
+			}
+		}
 	}
 }

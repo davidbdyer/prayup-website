@@ -11,7 +11,7 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	gap: 1rem;
+	gap: var(--gap);
 	font-size: 0.75rem;
 
 	& > li > a {

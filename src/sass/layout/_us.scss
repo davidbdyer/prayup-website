@@ -1,15 +1,33 @@
 @use '../utilities/border' as *;
+@use '../utilities/breakpoint' as *;
 
-.title > li > h4 {
-	max-width: 100%;
-}
+.us-ul {
+	li {
+		width: 100%;
 
-.title > li > p {
-	max-width: 8rem;
-	font-size: 0.7rem;
-}
+		@media (min-width: $lg) {
+			width: 50%;
+		}
+	}
 
-.ul_us_img > li > img {
-	@extend .border;
-	width: 8rem;
+	h4 {
+		max-width: 100%;
+
+		@media (min-width: $md) {
+			font-size: 1.5rem;
+		}
+	}
+
+	p {
+		font-size: 0.7rem;
+
+		@media (min-width: $md) {
+			font-size: 1rem;
+		}
+	}
+
+	img {
+		@extend .border;
+		width: 100%;
+	}
 }
