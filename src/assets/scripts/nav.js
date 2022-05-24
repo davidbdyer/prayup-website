@@ -4,7 +4,7 @@ let scrollPos = 0;
 window.addEventListener('scroll', () => {
 	let windowY = window.scrollY;
 
-	if (windowY < scrollPos) {
+	if (windowY < scrollPos - 80) {
 		donate.classList.contains('nav-active');
 		donate.classList.remove('nav-active');
 	} else if (windowY > scrollPos && windowY >= 25) {
