@@ -21,7 +21,7 @@
 		font-size: clamp(0.8rem, 1.5vw, 1.25rem);
 	}
 
-	@media (min-width: $lg) {
+	@media (min-width: $md) {
 		li > img {
 			width: 60%;
 		}

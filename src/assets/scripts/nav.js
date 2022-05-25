@@ -13,3 +13,11 @@ window.addEventListener('scroll', () => {
 	}
 	scrollPos = windowY;
 });
+
+const heroHome = document.querySelector('#hero-home');
+
+window.addEventListener("load", () => {
+	setTimeout(() => {
+		heroHome.classList.add('hero-home-after-load')
+	}, "3000")
+})

@@ -7,8 +7,6 @@
 	@extend .grid-list;
 
 	a {
-		width: 100%;
-
 		@media (min-width: $md) {
 			width: 60%;
 		}
@@ -27,6 +25,7 @@
 		margin-top: 0.5rem;
 		font-size: 0.8rem;
 		text-align: center;
+		width: 100%;
 
 		@media (min-width: $lg) {
 			font-size: 1.5rem;

@@ -26,7 +26,7 @@
 }
 
 .grid-list {
-	@media (min-width: $lg) {
+	@media (min-width: $md) {
 		--gap: 2rem;
 		li {
 			display: flex;
