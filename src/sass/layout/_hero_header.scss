@@ -6,9 +6,10 @@
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	transition: all 2000ms linear;
+	touch-action: none;
+
 	& img {
-		padding-bottom: 10vh;
+		width: 80%;
 
 		@media (min-width: $md) {
 			width: 50%;
@@ -16,13 +17,21 @@
 	}
 }
 
-.hero-home-after-load {
-	height: 25vh;
-	margin-block: 5vh;
-	// overflow: hidden;
+.hero-home {
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-name: hero-header;
+}
 
-	& img {
-		padding-bottom: 0;
-		height: 100%;
+@media (max-width: $xl) {
+	@keyframes hero-header {
+		from {
+			height: 100vh;
+		}
+		to {
+			height: 35vh;
+		}
 	}
 }

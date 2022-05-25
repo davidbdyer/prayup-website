@@ -11,4 +11,11 @@
 	font-family: gothambold;
 	text-align: center;
 	text-decoration: none;
+
+	transition: color 1000ms ease, background-color 1000ms ease;
+
+	&:hover {
+		background-color: var(--prayup-red);
+		color: var(--background-color)
+	}
 }
