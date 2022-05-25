@@ -20,8 +20,8 @@
 	}
 }
 
-.grid-lg-list {
-	@media (min-width: $lg) {
+.grid-md-list {
+	@media (min-width: $md) {
 		--gap: 2rem;
 		li {
 			--gap: 1.5rem;

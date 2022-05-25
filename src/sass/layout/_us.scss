@@ -4,13 +4,13 @@
 .us-ul {
 	justify-items: center;
 
-	@media (min-width: $lg) {
+	@media (min-width: $md) {
 		justify-items: start;
 	}
 	li {
 		width: 100%;
 
-		@media (min-width: $lg) {
+		@media (min-width: $md) {
 			width: 50%;
 		}
 	}
