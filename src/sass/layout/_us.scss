@@ -1,15 +1,19 @@
 @use '../base/border' as *;
 @use '../abstracts/breakpoint' as *;
+@use './grid' as *;
 
 .us-ul {
+	@extend .grid;
+	@extend .grid-md;
+	@extend .grid-list;
+
 	place-items: center;
+
 	img {
 		@extend .border;
-		width: 100%;
 	}
 
 	h4 {
-		max-width: 100%;
 		font-size: clamp(1rem, 2vw, 1.5rem);
 	}
 
@@ -18,14 +22,14 @@
 	}
 
 	@media (min-width: $lg) {
-		li {
+		li > img {
 			width: 60%;
 		}
 	}
 
 	@media (min-width: $xl) {
 		place-items: start;
-		li {
+		li > img {
 			width: 50%;
 		}
 	}
