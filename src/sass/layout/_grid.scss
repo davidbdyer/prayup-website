@@ -3,8 +3,11 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	// place-items: center;
 	gap: var(--gap);
+
+	@media (min-width: $md) {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 .grid-b {
@@ -15,24 +18,25 @@
 	@media (min-width: $md) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		justify-items: stretch;
+		// justify-items: stretch;
 		gap: var(--gap);
 	}
 }
 
-.grid-md-list {
-	@media (min-width: $md) {
+.grid-list {
+	@media (min-width: $lg) {
 		--gap: 2rem;
 		li {
-			--gap: 1.5rem;
+			--gap: 1rem;
 			display: flex;
+			flex-direction: column;
 			align-items: center;
-			width: 100%;
 			gap: var(--gap);
-
-			& > * {
-				flex: none;
-			}
+		}
+	}
+	@media (min-width: $xl) {
+		li {
+			flex-direction: row;
 		}
 	}
 }

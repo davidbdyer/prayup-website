@@ -2,37 +2,30 @@
 @use '../abstracts/breakpoint' as *;
 
 .us-ul {
-	justify-items: center;
-
-	@media (min-width: $md) {
-		justify-items: start;
-	}
-	li {
+	place-items: center;
+	img {
+		@extend .border;
 		width: 100%;
-
-		@media (min-width: $md) {
-			width: 50%;
-		}
 	}
 
 	h4 {
 		max-width: 100%;
-		font-size: clamp(1rem, 2vw, 2rem);
+		font-size: clamp(1rem, 2vw, 1.5rem);
 	}
 
 	p {
-		font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+		font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+	}
 
-		@media (min-width: $md) {
-			// font-size: 1rem;
+	@media (min-width: $lg) {
+		li {
+			width: 60%;
 		}
 	}
 
-	img {
-		@extend .border;
-		width: 100%;
-
-		@media (min-width: $lg) {
+	@media (min-width: $xl) {
+		place-items: start;
+		li {
 			width: 50%;
 		}
 	}
