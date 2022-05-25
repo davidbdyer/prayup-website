@@ -1,7 +1,12 @@
-@use '../utilities/border' as *;
-@use '../utilities/breakpoint' as *;
+@use '../base/border' as *;
+@use '../abstracts/breakpoint' as *;
 
 .us-ul {
+	justify-items: center;
+
+	@media (min-width: $lg) {
+		justify-items: start;
+	}
 	li {
 		width: 100%;
 
@@ -12,22 +17,23 @@
 
 	h4 {
 		max-width: 100%;
-
-		@media (min-width: $md) {
-			font-size: 1.5rem;
-		}
+		font-size: clamp(1rem, 2vw, 2rem);
 	}
 
 	p {
-		font-size: 0.7rem;
+		font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 
 		@media (min-width: $md) {
-			font-size: 1rem;
+			// font-size: 1rem;
 		}
 	}
 
 	img {
 		@extend .border;
 		width: 100%;
+
+		@media (min-width: $lg) {
+			width: 50%;
+		}
 	}
 }

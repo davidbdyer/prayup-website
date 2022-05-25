@@ -1,4 +1,4 @@
-@use './breakpoint' as *;
+@use '../abstracts/breakpoint' as *;
 
 .grid {
 	display: grid;
