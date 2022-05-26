@@ -6,32 +6,32 @@
 	@extend .grid-md;
 	@extend .grid-list;
 
-	a {
-		@media (min-width: $md) {
-			width: 60%;
-		}
+// 	a {
+// 		@media (min-width: $md) {
+// 			width: 60%;
+// 		}
+//
+// 		@media (min-width: $xl) {
+// 			width: 50%;
+// 		}
+// 	}
 
-		@media (min-width: $xl) {
-			width: 50%;
-		}
-	}
+	// img {
+	// 	width: 100%;
+	// 	border-radius: var(--border-radius);
+	// }
 
-	img {
-		width: 100%;
-		border-radius: var(--border-radius);
-	}
-
-	p {
-		width: 100%;
-		margin-top: 0.5rem;
-		font-size: 0.8rem;
-		text-align: center;
-
-		@media (min-width: $lg) {
-			font-size: 1.5rem;
-		}
-		@media (min-width: $xl) {
-			text-align: left;
-		}
-	}
+	// p {
+		// width: 100%;
+// 		margin-top: 0.5rem;
+// 		font-size: 0.8rem;
+// 		text-align: center;
+//
+// 		@media (min-width: $lg) {
+// 			font-size: 1.5rem;
+// 		}
+// 		@media (min-width: $xl) {
+// 			text-align: left;
+// 		}
+	// }
 }

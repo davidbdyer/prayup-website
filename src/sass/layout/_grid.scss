@@ -1,4 +1,5 @@
 @use '../abstracts/breakpoint' as *;
+@use '../base/border' as *;
 
 .grid {
 	display: grid;
@@ -26,18 +27,58 @@
 }
 
 .grid-list {
-	@media (min-width: $md) {
-		--gap: 2rem;
-		li {
-			display: flex;
-			flex-direction: column;
+	li {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		text-align: center;
+
+		@media (min-width: $md) {
+			flex-direction: row;
 			align-items: center;
 			gap: var(--gap);
 		}
-	}
-	@media (min-width: $xl) {
-		li {
-			flex-direction: row;
+
+		h4 {
+			font-size: clamp(1rem, 2vw, 1.5rem);
+			@media (min-width: $md) {
+				text-align: left;
+			}
+		}
+
+		p {
+			width: 100%;
+			font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+
+			@media (min-width: $md) {
+				text-align: left;
+			}
+		}
+
+		a {
+			@media (min-width: $md) {
+				align-items: center;
+				width: 60%;
+				gap: var(--gap);
+			}
+
+			@media (min-width: $xl) {
+				width: 50%;
+			}
+		}
+
+		img {
+			border-radius: var(--border-radius);
+		}
+
+		& > img {
+			@media (min-width: $md) {
+				width: 60%;
+			}
+
+			@media (min-width: $xl) {
+				width: 30%;
+			}
 		}
 	}
 }
