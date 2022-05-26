@@ -18,20 +18,32 @@
 }
 
 .hero-home {
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-delay: 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	animation-name: hero-header;
 }
 
-@media (max-width: $xl) {
+
+@media (max-width: $md) {
 	@keyframes hero-header {
 		from {
 			height: 100vh;
 		}
 		to {
 			height: 35vh;
+		}
+	}
+}
+
+@media (max-width: $lg) {
+	@keyframes hero-header {
+		from {
+			height: 100vh;
+		}
+		to {
+			height: 50vh;
 		}
 	}
 }
