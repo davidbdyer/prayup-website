@@ -1,0 +1,13 @@
+@use './grid' as *;
+
+.how-ul {
+	@extend .grid;
+	@extend .grid-list;
+	li {
+		align-items: end;
+		justify-content: center;
+	}
+	li > img {
+		width: 50%;
+	}
+}
