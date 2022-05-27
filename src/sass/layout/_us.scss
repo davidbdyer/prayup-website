@@ -7,29 +7,7 @@
 	@extend .grid-md;
 	@extend .grid-list;
 
-	// place-items: center;
-
 	img {
 		@extend .border;
 	}
-
-// 	h4 {
-// 		font-size: clamp(1rem, 2vw, 1.5rem);
-// 	}
-//
-// 	p {
-// 		font-size: clamp(0.8rem, 1.5vw, 1.25rem);
-// 	}
-//
-// 	@media (min-width: $md) {
-// 		li > img {
-// 			width: 60%;
-// 		}
-// 	}
-//
-// 	@media (min-width: $xl) {
-// 		li > img {
-// 			width: 30%;
-// 		}
-// 	}
 }
