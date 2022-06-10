@@ -1,8 +1,0 @@
-@use '../abstracts/breakpoint' as *;
-@use './grid' as *;
-
-.event-ul {
-	@extend .grid;
-	@extend .grid-md;
-	@extend .grid-list;
-}
