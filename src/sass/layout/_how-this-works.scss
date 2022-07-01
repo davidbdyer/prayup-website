@@ -1,8 +1,13 @@
+@use '../abstracts/breakpoint' as *;
 @use './grid' as *;
 
 .how-ul {
 	@extend .grid;
 	@extend .grid-list;
+
+	@media (min-width: $md) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 	li {
 		align-items: end;
 		justify-content: center;
