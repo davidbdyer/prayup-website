@@ -49,12 +49,6 @@
 			<img src="assets/images/pu-header-logo-horiz.svg" alt="prayup logo" />
 		</header>
 
-		<!-- bottom popup nav -->
-		<nav class="border-top nav" id="nav">
-			<a tabindex="0" class="btn" href="https://prayuplife.com/store">Store</a>
-			<a tabindex="0" class="btn" href="index.html">Home</a>
-		</nav>
-
 		<!-- thank you -->
 		<section class="border mb-2 p-section">
 			<h2>Thank You</h2>
@@ -144,61 +138,13 @@
 			</section>
 		</div>
 
-		<!-- contact form -->
-		<section class="border mb-2 p-section contact_form">
-			<h2>Start a Pray Up Team At Your Church</h2>
+		<!-- include contact form -->
+		<?php include 'partials/contact.php'; ?>
 
-			<form id="mailinglist" action="mail.php" method="POST">
-				<label class="sr-only" for="name">name</label>
-				<input
-					class="border mb-1"
-					type="text"
-					id="name"
-					name="name"
-					minlength="2"
-					maxlength="20"
-					placeholder="name"
-					required
-				/>
+		<!-- include footer-->
+		<?php include 'partials/footer.php'; ?>
 
-				<label class="sr-only" for="email">email</label>
-				<input
-					class="border mb-1"
-					type="email"
-					id="email"
-					name="email"
-					minlength="2"
-					maxlength="50"
-					placeholder="email"
-					required
-				/>
-
-				<label class="sr-only" for="mobile">mobile</label>
-				<input
-					class="border mb-1"
-					type="tel"
-					id="mobile"
-					name="mobile"
-					minlength="10"
-					maxlength="14"
-					placeholder="mobile"
-					required
-				/>
-
-				<button class="btn">Submit</button>
-			</form>
-		</section>
-
-		<footer class="mb-2">
-			<p>Contact Us: info@prayuplife.com</p>
-			<small>
-				&copy;
-				<script>
-					document.write(new Date().getFullYear());
-				</script>
-				<a href="https://www.daviddyer.me" target="_blank" rel="noopener noreferrer">David Dyer</a> All Rights
-				Reserved.
-			</small>
-		</footer>
+		<!-- bottom popup nav -->
+		<?php include 'partials/nav.php'; ?>
 	</body>
 </html>

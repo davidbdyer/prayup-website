@@ -1,0 +1,21 @@
+@use '../base' as *;
+
+.contact_form {
+	& > form input {
+		height: 2.125em;
+	}
+
+	& > form input,
+	& > form textarea {
+		@extend .border;
+		@extend .mb-1;
+
+		width: 100%;
+		padding-inline-start: 0.5em;
+	}
+
+}
+
+#website {
+	display: none;
+}

@@ -8,9 +8,13 @@
 		"build:sass": "sass --no-source-map src/sass:public/css",
 		"copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
 		"copy:html": "copyfiles -u 1 ./src/*.html public",
+		"copy:php": "copyfiles -u 1 ./src/*.php public",
+		"copy:partials": "copyfiles -u 1 ./src/partials/*.php public",
 		"copy": "npm-run-all --parallel copy:*",
 		"watch:assets": "onchange 'src/assets/**/*' -- npm run copy:assets",
 		"watch:html": "onchange 'src/*.html' -- npm run copy:html",
+		"watch:php": "onchange 'src/*.php' -- npm run copy:php",
+		"watch:partials": "onchange 'src/partials/*.php' -- npm run copy:partials",
 		"watch:sass": "sass  --no-source-map --watch src/sass:public/css",
 		"watch": "npm-run-all --parallel watch:*",
 		"serve": "browser-sync start --proxy 'localhost:80/~david/prayup/public/' --serveStatic 'public' --files 'public' --no-ghost-mode",
@@ -19,6 +23,7 @@
 		"postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
 	},
 	"dependencies": {
+		"@prettier/plugin-php": "^0.18.8",
 		"autoprefixer": "^10.4.2",
 		"browser-sync": "^2.27.7",
 		"copyfiles": "^2.4.1",
