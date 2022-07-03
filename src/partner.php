@@ -1,48 +1,12 @@
+<?php
+	$title = "Pray Up - Partner";
+	$metaDescription =
+		"Pray Up is looking for partners to fund platform development and outreach cost.";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="theme-color" content="#ededed" media="(prefers-color-scheme: light)" />
-	<meta name="theme-color" content="#d82529" media="(prefers-color-scheme: dark)" />
-
-	<!-- Primary Meta Tags -->
-	<title>Pray Up - Partner</title>
-	<meta name="title" content="Pray Up - Partner" />
-	<meta name="description" content="Pray Up is looking for partners to fund platform development and outreach cost." />
-
-	<!-- Default -->
-	<link rel="icon" href="https://prayuplife.com/assets/images/favicon.svg" type="image/x-icon" />
-	<link rel="shortcut icon" href="https://prayuplife.com/assets/images/favicon.ico" type="image/x-icon" />
-
-	<!-- PNG Icon -->
-	<link rel="icon" type="image/png" href="https://prayuplife.com/assets/images/apple-touch-icon.png" />
-
-	<!-- Apple macOS Safari Mask Icon -->
-	<link rel="mask-icon" href="https://prayuplife.com/assets/images/apple-touch-icon.png" color="#ededed" />
-
-	<!-- Apple Touch Icon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="https://prayuplife.com/assets/images/apple-touch-icon.png" />
-
-	<!-- Apple iOS Safari Theme -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#ededed" />
-	<meta name="apple-mobile-web-app-title" content="Pray Up" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://prayuplife.com/partner.html" />
-	<meta property="og:title" content="Pray Up - Partner" />
-	<meta property="og:description" content="Pray Up is looking for partners to fund platform development and outreach cost." />
-	<meta property="og:image" content="https://prayuplife.com/assets/images/site-thumb.jpg" />
-	<meta property="og:image:width" content="1600" />
-	<meta property="og:image:height" content="630" />
-
-	<link rel="stylesheet" href="css/style.css" />
-
-	<script src="assets/scripts/nav.js" defer></script>
-</head>
-
+	<?php include 'partials/head.php'; ?>
 
 	<body>
 		<header class="mb-2 p-1">

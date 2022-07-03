@@ -9,5 +9,9 @@
 		<a tabindex="0" class="btn" href="./">Home</a>
 	<?php } ?>
 
+	<?php if ($currentPage != 'prayer') { ?>
+		<a tabindex="0" class="btn" href="prayer.php">Prayer</a>
+	<?php } ?>
+
 	<a tabindex="0" class="btn" href="https://prayuplife.com/store">Store</a>
 </nav>

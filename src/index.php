@@ -1,49 +1,15 @@
+<?php
+$title = 'Pray Up';
+$metaDescription =
+	"Pray Up's mission is to bring people together through the power of prayer. We host interdenominational city-wide prayer walks and communal worship, bringing unity to the body of Christ. We will soon be available as an online platform to make a global impact.";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="theme-color" content="#ededed" media="(prefers-color-scheme: light)" />
-		<meta name="theme-color" content="#d82529" media="(prefers-color-scheme: dark)" />
+<?php include 'partials/head.php'; ?>
 
-		<!-- Primary Meta Tags -->
-		<title>Pray Up</title>
-		<meta name="title" content="Pray Up" />
-		<meta name="description" content="Pray Up's mission is to bring people together through the power of prayer. We host interdenominational city-wide prayer walks and communal worship, bringing unity to the body of Christ. We will soon be available as an online platform to make a global impact." />
-
-		<!-- Default -->
-		<link rel="icon" href="https://prayuplife.com/assets/images/favicon.svg" type="image/x-icon" />
-		<link rel="shortcut icon" href="https://prayuplife.com/assets/images/favicon.ico" type="image/x-icon" />
-
-		<!-- PNG Icon -->
-		<link rel="icon" type="image/png" href="https://prayuplife.com/assets/images/apple-touch-icon.png" />
-
-		<!-- Apple macOS Safari Mask Icon -->
-		<link rel="mask-icon" href="https://prayuplife.com/assets/images/apple-touch-icon.png" color="#ededed" />
-
-		<!-- Apple Touch Icon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="https://prayuplife.com/assets/images/apple-touch-icon.png" />
-
-		<!-- Apple iOS Safari Theme -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="#ededed" />
-		<meta name="apple-mobile-web-app-title" content="Pray Up" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://prayuplife.com/" />
-		<meta property="og:title" content="Pray Up" />
-		<meta property="og:description" content="Pray Up's mission is to bring people together through the power of prayer. We host interdenominational city-wide prayer walks and communal worship, bringing unity to the body of Christ. We will soon be available as an online platform to make a global impact." />
-		<meta property="og:image" content="https://prayuplife.com/assets/images/site-thumb.jpg" />
-		<meta property="og:image:width" content="1600" />
-		<meta property="og:image:height" content="630" />
-
-		<link rel="stylesheet" href="css/style.css" />
-
-		<script src="assets/scripts/nav.js" defer></script>
-	</head>
-
-	<body>
+<body>
+	<div class="layout">
 		<header class="hero-home" id="hero-home">
 			<img src="assets/images/pu-header-logo-vert.svg" alt="pray up logo" />
 		</header>
@@ -53,29 +19,21 @@
 			<h2>Events</h2>
 			<h3 class="after-hr">Weekly</h3>
 			<ul class="grid grid-list">
-				<!-- <li>
-					<a href="https://bwcministries.com" target="_blank" rel="noopener noreferrer" >
-						<img src="assets/images/logo-bwc.png" alt="Bethal Worship Center, Marion IN" />
-					</a>
-					<div>
-						<p>Sun: 10a - 11a</p>
-					</div>
-				</li> -->
 				<li>
-					<a href="https://theriver.cc" target="_blank" rel="noopener noreferrer" >
+					<a href="https://theriver.cc" target="_blank" rel="noopener noreferrer">
 						<img src="assets/images/logo-river.png" alt="The River Church, Marion IN" />
 					</a>
 					<div>
 						<p>Sun: 7:30a - 8:45a</p>
-				</div>
+					</div>
 				</li>
 				<li>
-					<a href="http://eastgatecc.net" target="_blank" rel="noopener noreferrer" >
+					<a href="http://eastgatecc.net" target="_blank" rel="noopener noreferrer">
 						<img src="assets/images/logo-eastgate.png" alt="Eastgate, Marion IN" />
 					</a>
 					<div>
 						<p>Sun: 10:00a - 10:30a</p>
-				</div>
+					</div>
 				</li>
 			</ul>
 		</section>
@@ -131,5 +89,16 @@
 
 		<!-- bottom popup nav -->
 		<?php include 'partials/nav.php'; ?>
-	</body>
+
+		<div class="feed">
+			<p>Anim officia est mollit qui veniam eu elit consectetur quis. Quis nulla mollit officia do. Deserunt ipsum cupidatat
+				fugiat aute eu aliquip excepteur. Aliqua cillum eiusmod qui est exercitation enim exercitation do nostrud tempor
+				duis consequat sint quis. Aute incididunt fugiat duis consectetur nulla in dolor do pariatur velit laborum sunt
+				dolor in culpa. Ullamco tempor amet ullamco velit quis velit esse culpa eu. Minim Lorem nulla nisi nisi veniam
+				adipisicing. Eu culpa sit eu ut enim excepteur officia excepteur commodo elit. Veniam ad nostrud veniam incididunt
+				mollit anim proident reprehenderit aliqua. Enim quis do ex et officia amet quis laborum.</p>
+		</div>
+	</div>
+</body>
+
 </html>
