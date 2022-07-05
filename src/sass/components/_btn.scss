@@ -1,11 +1,14 @@
+@use '../base/border' as *;
+
 .btn {
+	@extend .border;
 	display: block;
 	min-width: calc(6ch + 0.5em);
+	max-width: fit-content;
+	height: fit-content;
 	margin-inline: 0;
 	padding-inline: 0.5em;
 	padding-block: 0.25em;
-	border: 1px solid var(--prayup-red);
-	border-radius: var(--border-radius);
 	background-color: inherit;
 	color: var(--prayup-red);
 	font-family: gothambold;
@@ -16,6 +19,6 @@
 
 	&:hover {
 		background-color: var(--prayup-red);
-		color: var(--background-color)
+		color: var(--background-color);
 	}
 }

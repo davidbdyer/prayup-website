@@ -1,0 +1,41 @@
+@use '../abstracts/breakpoint' as *;
+
+.feed {
+	display: grid;
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2em;
+
+		li {
+			max-width: 15ch;
+			max-height: 1.5em;
+			overflow: hidden;
+		}
+	}
+
+	.btn {
+		order: 3;
+	}
+
+	@media (min-width: $xl) {
+		display: flex;
+		flex-direction: column;
+		text-transform: capitalize;
+
+		ul {
+			display: inline;
+
+			li {
+				max-width: 100%;
+				max-height: 1.5em;
+				overflow: hidden;
+			}
+		}
+
+		.btn {
+			order: unset;
+		}
+	}
+}

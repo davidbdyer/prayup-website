@@ -23,7 +23,6 @@
 		"postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
 	},
 	"dependencies": {
-		"@prettier/plugin-php": "^0.18.8",
 		"autoprefixer": "^10.4.2",
 		"browser-sync": "^2.27.7",
 		"copyfiles": "^2.4.1",

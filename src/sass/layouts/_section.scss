@@ -1,0 +1,7 @@
+@use '../base/border' as *;
+
+section {
+	@extend .border;
+	padding: 1rem;
+	margin-bottom: 2rem;
+}

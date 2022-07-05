@@ -8,5 +8,6 @@ public/
 *.fig
 prepros.config
 package-lock.json
-.prettierrc
 src/assets/scripts/address.php
+.prettierrc
+src/assets/scripts/database.php

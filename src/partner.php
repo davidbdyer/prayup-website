@@ -9,12 +9,12 @@
 	<?php include 'partials/head.php'; ?>
 
 	<body>
-		<header class="mb-2 p-1">
+		<header class="small-header">
 			<img src="assets/images/pu-header-logo-horiz.svg" alt="prayup logo" />
 		</header>
 
 		<!-- thank you -->
-		<section class="border mb-2 p-section">
+		<section>
 			<h2>Thank You</h2>
 			<p>
 				Thank you for your interest in supporting <em>Pray Up</em>. Joseph, the creator of <em>Pray Up</em>,
@@ -38,7 +38,7 @@
 		</section>
 
 		<!-- how this works -->
-		<section class="border mb-2 p-section">
+		<section>
 			<h2>How this works</h2>
 			<p>
 				Click one of the icons below to commit to a gift for travel, or app development. If you would like to do
@@ -63,7 +63,7 @@
 		</section>
 
 		<div class="grid-dual-md">
-			<section class="border donate mb-2 p-section">
+			<section>
 				<h2>Travel</h2>
 				<img src="assets/images/icon-travel.svg" alt=" Travel Support" />
 				<ul class="list-btn">
@@ -82,7 +82,7 @@
 				</ul>
 			</section>
 
-			<section class="border donate mb-2 p-section" id="app_development">
+			<section class="border donate mb-2" id="app_development">
 				<h2>App Development</h2>
 				<img src="assets/images/icon-dev.svg" alt="App Development" />
 				<ul class="list-btn">

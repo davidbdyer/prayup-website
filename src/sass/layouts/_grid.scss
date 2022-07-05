@@ -4,8 +4,8 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: var(--gap);
 	row-gap: 2rem;
+	gap: var(--gap);
 
 	@media (min-width: $md) {
 		grid-template-columns: repeat(3, 1fr);
@@ -73,5 +73,13 @@
 				text-align: left;
 			}
 		}
+	}
+}
+
+.grid-three-fourths {
+	@media (min-width: $xl) {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		gap: 2rem;
 	}
 }

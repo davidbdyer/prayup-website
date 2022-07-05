@@ -1,4 +1,4 @@
-<section class="border mb-2 p-section contact_form">
+<section class="border mb-2 contact_form">
 	<h2>Start a Pray Up Team At Your Church</h2>
 
 	<form id="mailinglist" action="assets/scripts/mail.php" method="POST">
