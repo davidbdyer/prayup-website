@@ -10,7 +10,8 @@
 	$metaDescription = "Pray Up's mission is to bring people together through the power of prayer. We host interdenominational city-wide prayer walks and communal worship, bringing unity to the body of Christ. We will soon be available as an online platform to make a global impact.";
 ?>
 <!DOCTYPE html>
-<html lang="en"> <?php include 'partials/head.php'; ?>
+<html lang="en">
+	<?php include 'partials/head.php'; ?>
 
 <body>
 	<header class="hero-home" id="hero-home">
