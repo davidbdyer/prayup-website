@@ -19,7 +19,7 @@
 		"watch": "npm-run-all --parallel watch:*",
 		"start-php":"php -S 0.0.0.0:8888 -t ./public",
 		"serve": "browser-sync start --proxy '0.0.0.0:8888' --files 'public' --no-ghost-mode",
-		"start": "npm-run-all copy --parallel watch serve",
+		"start": "npm-run-all copy --parallel watch start-php serve",
 		"build": "npm-run-all copy --parallel build:*",
 		"postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
 	},

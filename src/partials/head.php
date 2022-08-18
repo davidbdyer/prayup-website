@@ -10,17 +10,17 @@
 	<meta name="description" content="<?php echo $metaDescription; ?>" />
 
 	<!-- Default -->
-	<link rel="icon" href="https://prayuplife.com/assets/images/favicon.svg" type="image/x-icon" />
-	<link rel="shortcut icon" href="https://prayuplife.com/assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon" />
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
 	<!-- PNG Icon -->
-	<link rel="icon" type="image/png" href="https://prayuplife.com/assets/images/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" href="assets/images/apple-touch-icon.png" />
 
 	<!-- Apple macOS Safari Mask Icon -->
-	<link rel="mask-icon" href="https://prayuplife.com/assets/images/apple-touch-icon.png" color="#ededed" />
+	<link rel="mask-icon" href="assets/images/apple-touch-icon.png" color="#ededed" />
 
 	<!-- Apple Touch Icon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="https://prayuplife.com/assets/images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
 
 	<!-- Apple iOS Safari Theme -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#ededed" />
